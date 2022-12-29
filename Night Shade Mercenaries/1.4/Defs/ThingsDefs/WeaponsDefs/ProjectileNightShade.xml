@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- P21 - Assault Rifle -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P21_Standard</defName>
+        <label>Night Shade standard assult rifle Bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/P21</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Flame</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <armorPenetrationBase>0.4</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>80</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P10 - Shotgun -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P10_Standard</defName>
+        <label>Night Shade Standard pellets</label>
+        <graphicData>
+            <texPath>Things/Projectile/P10</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <stoppingPower>3</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P50 - Sniper -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P50_Standard</defName>
+        <label>Night Shade standard sniper bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/P50</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>6</stoppingPower>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P3 - Light Arm -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P3_Standard</defName>
+        <label>Night Shade standard light arm bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/P3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <stoppingPower>1.3</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- R512 - Rocket  -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_R512_Standard</defName>
+        <label>R512 Rocket</label>
+        <graphicData>
+            <texPath>Things/Projectile/R512</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>5.0</explosionRadius>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+</Defs>
