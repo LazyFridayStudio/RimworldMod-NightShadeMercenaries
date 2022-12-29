@@ -505,7 +505,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>NS_Bullet_P21_Standard</defaultProjectile>
+                <defaultProjectile>NS_Bullet_P30_Standard</defaultProjectile>
                 <warmupTime>1.5</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
