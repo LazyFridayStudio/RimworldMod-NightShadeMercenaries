@@ -132,7 +132,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>Melee_HHM12_NS</defName>
         <label>H-HM12 "Hammer"</label>
-        <description>A Short blunt hammer</description>
+        <description>A Short blunt hammer with built in plasma plates</description>
         <graphicData>
             <texPath>Things/Weapons/H-HM12</texPath>
             <graphicClass>Graphic_Single</graphicClass>

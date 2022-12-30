@@ -4,7 +4,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_ART500_NS</defName>
         <label>AR-T500 "Assault Rifle"</label>
-        <description>The AR-T500 is a standard charge rifle, Which improves on the orignal charge rifle</description>
+        <description>The AR-T500 is a standard charge rifle, with a built in plasma infuser</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/AR-T500</texPath>
@@ -84,7 +84,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_SJ51_NS</defName>
         <label>S-J51 "Shotgun"</label>
-        <description>The S-J51 is a standard charge shotgun</description>
+        <description>The S-J51 is a standard charge shotgun, with a built in plasma infuser</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/S-J51</texPath>
@@ -164,7 +164,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_SNM12_NS</defName>
         <label>SN-M12 "Sniper" </label>
-        <description>The SN-M12 is a standard charged-shot sniper rifle. the charged energy greatly increases the damage done.</description>
+        <description>The SN-M12 is a standard charged-shot sniper rifle. with a built in plasma infuser, With the increased speed and power will set the target on fire.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/SN-M12</texPath>
@@ -243,7 +243,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_PO250_NS</defName>
         <label>P-O250 "Pistol"</label>
-        <description>The S-J51 is a standard charge pistol</description>
+        <description>The S-J51 is a standard charge pistol. with a built in plasma infuser</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/P-O250</texPath>
@@ -315,7 +315,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_SGI45_NS</defName>
         <label>SG-I45 "SMG"</label>
-        <description>The SG-I45 is a standard response charge sub machine gun</description>
+        <description>The SG-I45 is a standard response charge sub machine gun. with a built in plasma infuser</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/SG-I45</texPath>
@@ -387,7 +387,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_RJC19_NS</defName>
         <label>R-JC19 "Rocket Luncher"</label>
-        <description>The R-JC19 is a standard Charge Rocket luncher, Shooting an charged explosive, with the use of stack reloading, it can be used more than once.</description>
+        <description>The R-JC19 is a standard Charge Rocket luncher, Shooting an charged explosive infused with plasma, with the use of stack reloading, it can be used more than once</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/R-JC19</texPath>
@@ -462,7 +462,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_LM19_NS</defName>
         <label>L-M19 "LMG"</label>
-        <description>The L-19 is a standard response charge light machine gun</description>
+        <description>The L-19 is a standard response charge light machine gun. with a built in plasma infuser</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/Weapons/L-M19</texPath>
