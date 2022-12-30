@@ -3,7 +3,7 @@
     <FactionDef>
         <defName>Faction_NightShadeMercenaries</defName>
         <label>Night Shade Mercenaries</label>
-        <description>A lost set of anicent xenos known as the night shades. Using the already advance spacer technolgy have improved and inhanced their own set of deadly weapons. They formed a mercenary group which servers them selves and no one else, set on only taking requests that they know they will win</description>
+        <description>A set of lost Zearot formed into a group called Night Shade Mercenaries. They improved and enhanced their own set of deadly weapons using the already advanced spacer technology. With the constant infighting from generation to generation, there remains no such thing as a central power of the Zearot Xenos. Instead, all that exists now are small mercenary groups. They only take requests that they know they will win. Bound always to be a survivor.</description>
 
         <pawnSingular>Mercenary</pawnSingular>
         <pawnsPlural>Mercenaries</pawnsPlural>
