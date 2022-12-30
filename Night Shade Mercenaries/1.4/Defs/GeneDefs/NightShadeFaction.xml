@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <FactionDef>
-        <defName>Faction_NightShadeMercenaries</defName>
+        <defName>NightShadeMercenaries</defName>
         <label>Night Shade Mercenaries</label>
         <description>A set of lost Zearot formed into a group called Night Shade Mercenaries. They improved and enhanced their own set of deadly weapons using the already advanced spacer technology. With the constant infighting from generation to generation, there remains no such thing as a central power of the Zearot Xenos. Instead, all that exists now are small mercenary groups. They only take requests that they know they will win. Bound always to be a survivor.</description>
 
@@ -125,7 +125,7 @@
 
     <PawnKindDef Name="NightShadeBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>Faction_NightShadeMercenaries</defaultFactionType>
+        <defaultFactionType>NightShadeMercenaries</defaultFactionType>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
         <itemQuality>Normal</itemQuality>
