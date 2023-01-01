@@ -137,6 +137,23 @@
         </weaponMoney>
         <initialWillRange>2~8</initialWillRange>
         <initialResistanceRange>18~32</initialResistanceRange>
+
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_HNSG_Standard</li>
+            <li>Apparel_ANSG_Standard</li>
+        </apparelRequired>
+
+        <apparelTags>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+
+        <apparelMoney>
+            <min>3000</min>
+            <max>8000</max>
+        </apparelMoney>
     </PawnKindDef>
 
     <!-- Night Shade Recruit -->
@@ -154,21 +171,6 @@
             <min>1</min>
             <max>2</max>
         </gearHealthRange>
-
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
-        <apparelRequired>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
-        </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
 
         <weaponTags>
             <li>NightShadeStandard</li>
@@ -225,22 +227,7 @@
             <min>1</min>
             <max>2</max>
         </gearHealthRange>
-
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
-        <apparelRequired>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
-        </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
-
+        
         <weaponTags>
             <li>NightShadeDemo</li>
         </weaponTags>
@@ -296,21 +283,6 @@
             <max>2</max>
         </gearHealthRange>
 
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
-        <apparelRequired>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
-        </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
-
         <weaponTags>
             <li>NightShadeSpecialist</li>
         </weaponTags>
@@ -365,22 +337,7 @@
             <min>1</min>
             <max>2</max>
         </gearHealthRange>
-
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
-        <apparelRequired>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
-        </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
-
+        
         <weaponTags>
             <li>NightShadeHeavy</li>
         </weaponTags>
@@ -435,21 +392,6 @@
             <min>1</min>
             <max>2</max>
         </gearHealthRange>
-
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
-        <apparelRequired>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
-        </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
 
         <weaponTags>
             <li>NightShadeStandard</li>
@@ -507,21 +449,6 @@
             <max>2</max>
         </gearHealthRange>
 
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
-        <apparelRequired>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
-        </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
-
         <weaponTags>
             <li>NightShadeHeavy</li>
         </weaponTags>
@@ -578,21 +505,13 @@
             <max>2</max>
         </gearHealthRange>
 
-        <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-
         <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
             <li>Apparel_HNSG_Standard</li>
             <li>Apparel_ANSG_Standard</li>
             <li>Apparel_ShieldBelt</li>
         </apparelRequired>
-
-        <apparelMoney>
-            <min>1000</min>
-            <max>5000</max>
-        </apparelMoney>
 
         <weaponTags>
             <li>NightShadeMeleeStandard</li>

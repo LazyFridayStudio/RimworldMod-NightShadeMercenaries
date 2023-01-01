@@ -22,6 +22,7 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <statBases>
+            <MarketValue>3000</MarketValue>
             <WorkToMake>75000</WorkToMake>
             <MaxHitPoints>400</MaxHitPoints>
             <Mass>15</Mass>
@@ -93,6 +94,7 @@
         </graphicData>
         <uiIconScale>1.0</uiIconScale>
         <statBases>
+            <MarketValue>3000</MarketValue>
             <WorkToMake>26250</WorkToMake>
             <MaxHitPoints>180</MaxHitPoints>
             <Mass>2.1</Mass>
