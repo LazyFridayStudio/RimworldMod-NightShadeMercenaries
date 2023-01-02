@@ -23,6 +23,20 @@
 
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 
+        <baseTraderKinds>
+            <li>Settlement_NightShade_Standard</li>
+        </baseTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_NightShade_Standard</li>
+        </visitorTraderKinds>
+        <caravanTraderKinds>
+            <li>Caravan_NightShade_Standard</li>
+        </caravanTraderKinds>
+
+        <permanentEnemyToEveryoneExcept>
+            <li>PlayerTribe</li>
+            <li>PlayerColony</li>
+        </permanentEnemyToEveryoneExcept>
 
         <factionIconPath>UI/NSMIcon</factionIconPath>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -38,20 +52,14 @@
             </xenotypeChances>
         </xenotypeSet>
 
-        <caravanTraderKinds>
-            <li>Caravan_Outlander_Exotic</li>
-            <li>Caravan_Neolithic_WarMerchant</li>
-            <li>Caravan_Neolithic_Slaver</li>
-        </caravanTraderKinds>
-
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 
         <colorSpectrum>
             <li>(55, 55, 55)</li>
         </colorSpectrum>
 
-        <factionNameMaker>NamerFactionTribalNeanderthal</factionNameMaker>
-        <settlementNameMaker>NamerSettlementTribalNeaderthal</settlementNameMaker>
+        <factionNameMaker>NamerFactionEmpire</factionNameMaker>
+        <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
         <techLevel>Spacer</techLevel>
 
         <backstoryCategories>
@@ -119,6 +127,23 @@
                     <NS_Medic>2</NS_Medic>
                     <NS_General>1</NS_General>
                 </options>
+            </li>
+
+            <li>
+                <!-- Trader -->
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <NS_Trader>1</NS_Trader>
+                </traders>
+                <carriers>
+                    <Shadum>8</Shadum>
+                </carriers>
+                <guards>
+                    <NS_Recruit>4</NS_Recruit>
+                    <NS_Meele>1</NS_Meele>
+                    <NS_Medic>2</NS_Medic>
+                    <NS_Specialist>2</NS_Specialist>
+                </guards>
             </li>
         </pawnGroupMakers>
     </FactionDef>
@@ -506,10 +531,67 @@
         </gearHealthRange>
 
         <apparelRequired>
-            <li>Apparel_Pants</li>
-            <li>Apparel_BasicShirt</li>
-            <li>Apparel_HNSG_Standard</li>
-            <li>Apparel_ANSG_Standard</li>
+            <li>Apparel_ShieldBelt</li>
+        </apparelRequired>
+
+        <weaponTags>
+            <li>NightShadeMeleeStandard</li>
+        </weaponTags>
+
+        <techHediffsMoney>
+            <min>1000</min>
+            <max>2500</max>
+        </techHediffsMoney>
+
+        <combatEnhancingDrugsCount>
+            <min>0</min>
+            <max>0</max>
+        </combatEnhancingDrugsCount>
+
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techHediffsChance>0.3</techHediffsChance>
+        <inventoryOptions>
+            <skipChance>0.1</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>1</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Night Shade Trader  -->
+    <PawnKindDef ParentName="NightShadeBase">
+        <defName>NS_Trader</defName>
+        <label>Night Shade Trader</label>
+        <combatPower>150</combatPower>
+        <trader>true</trader>
+        <isFighter>false</isFighter>
+        
+        <weaponMoney>
+            <min>2500</min>
+            <max>4000</max>
+        </weaponMoney>
+
+        <gearHealthRange>
+            <min>1</min>
+            <max>2</max>
+        </gearHealthRange>
+
+        <apparelRequired>
             <li>Apparel_ShieldBelt</li>
         </apparelRequired>
 
