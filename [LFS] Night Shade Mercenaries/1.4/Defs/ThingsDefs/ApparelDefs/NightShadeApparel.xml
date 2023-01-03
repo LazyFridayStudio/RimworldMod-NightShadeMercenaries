@@ -11,6 +11,9 @@
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
         </recipeMaker>
         <thingCategories>
             <li>ApparelArmor</li>
@@ -20,7 +23,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <uiIconScale>1.0</uiIconScale>
+        <uiIconScale>1.4</uiIconScale>
         <statBases>
             <MarketValue>3000</MarketValue>
             <WorkToMake>75000</WorkToMake>
@@ -38,6 +41,8 @@
             <ComponentSpacer>5</ComponentSpacer>
             <Plasteel>120</Plasteel>
             <Uranium>30</Uranium>
+            <WoolShadum>180</WoolShadum>
+            <Shadum_Horn>3</Shadum_Horn>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -83,6 +88,9 @@
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
         </recipeMaker>
         <thingCategories>
             <li>ApparelArmor</li>
@@ -92,7 +100,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <uiIconScale>1.0</uiIconScale>
+        <uiIconScale>1.25</uiIconScale>
         <statBases>
             <MarketValue>3000</MarketValue>
             <WorkToMake>26250</WorkToMake>
@@ -109,6 +117,8 @@
         <costList>
             <ComponentSpacer>2</ComponentSpacer>
             <Plasteel>60</Plasteel>
+            <WoolShadum>60</WoolShadum>
+            <Shadum_Horn>1</Shadum_Horn>
         </costList>
         <apparel>
             <bodyPartGroups>
