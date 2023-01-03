@@ -15,7 +15,7 @@
         <uiIconScale>1.35</uiIconScale>
         <comps>
             <li Class="CompProperties_Shearable">
-                <woolDef>WoolMuffalo</woolDef>
+                <woolDef>WoolShadum</woolDef>
                 <shearIntervalDays>15</shearIntervalDays>
                 <woolAmount>120</woolAmount>
             </li>
@@ -28,12 +28,12 @@
         </comps>
         <race>
             <herdAnimal>true</herdAnimal>
-            <body>QuadrupedAnimalWithHooves</body>
+            <body>QuadrupedAnimalWithHoovesAndHorn</body>
             <baseBodySize>2.4</baseBodySize>
             <baseHealthScale>2.5</baseHealthScale>
             <baseHungerRate>0.535</baseHungerRate>
             <foodType>VegetarianRoughAnimal</foodType>
-            <leatherDef>Leather_Bluefur</leatherDef>
+            <leatherDef>Leather_Shadum</leatherDef>
             <gestationPeriodDays>6.66</gestationPeriodDays>
             <wildness>0.6</wildness>
             <roamMtbDays>2</roamMtbDays>
@@ -74,6 +74,16 @@
             <li>AnimalFarm</li>
         </tradeTags>
         <tools>
+            <li>
+                <label>horn</label>
+                <capacities>
+                    <li>Scratch</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+            </li>
             <li>
                 <label>head</label>
                 <capacities>
@@ -120,7 +130,7 @@
     <PawnKindDef Name="Shadum" ParentName="AnimalKindBase">
         <defName>Shadum</defName>
         <label>Shadum</label>
-        <race>Muffalo</race>
+        <race>Shadum</race>
         <combatPower>100</combatPower>
         <ecoSystemWeight>1.1</ecoSystemWeight>
         <wildGroupSize>3~9</wildGroupSize>
@@ -168,6 +178,10 @@
                     <texPath>Things/Pawns/Shadum/Dessicated_Shadum</texPath>
                     <drawSize>3</drawSize>
                 </dessicatedBodyGraphicData>
+                <butcherBodyPart>
+                    <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                    <thing>Shadum_Horn</thing>
+                </butcherBodyPart>
             </li>
         </lifeStages>
     </PawnKindDef>
