@@ -9,7 +9,7 @@
             abilities, they can fight for longer and harder. Losing the skills of art and farming has left them as
             superb hunters. Due to their vulnerability, the pigment of their skin is dark slate grey.</description>
         <descriptionShort>The Zearot is an ancient xenotype betrayed by those whom they worshipped</descriptionShort>
-        <iconPath>UI/NightShadeRace</iconPath>
+        <iconPath>UI/ZearotIcon</iconPath>
         <inheritable>true</inheritable>
         <combatPowerFactor>1.0</combatPowerFactor>
         <nameMaker>NamerPersonImpid</nameMaker>

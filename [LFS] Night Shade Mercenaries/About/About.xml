@@ -9,11 +9,11 @@
     <packageId>LazyFridayStudio.NightShadeMercenarys</packageId>
     <modDependencies>
     <li>
-        <packageId>Ludeon.RimWorld.Biotech</packageId>
-        <displayName>Biotech</displayName>
+        <packageId>Ludeon.RimWorld</packageId>
+        <displayName>Core</displayName>
     </li>
     </modDependencies>
     <loadAfter>
-        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld</li>
     </loadAfter>
 </ModMetaData>

@@ -48,14 +48,14 @@
         
         <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Xeno_Zearot>1</Xeno_Zearot>
+                <Xeno_Zearot MayRequire="Ludeon.RimWorld.Biotech">1</Xeno_Zearot>
             </xenotypeChances>
         </xenotypeSet>
 
         <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 
         <colorSpectrum>
-            <li>(55, 55, 55)</li>
+            <li>(255, 255, 255)</li>
         </colorSpectrum>
 
         <factionNameMaker>NamerFactionEmpire</factionNameMaker>
