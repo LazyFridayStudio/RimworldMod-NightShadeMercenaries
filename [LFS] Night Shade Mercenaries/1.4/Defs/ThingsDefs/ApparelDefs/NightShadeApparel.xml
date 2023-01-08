@@ -6,7 +6,7 @@
         <description>A high-tech armored suit with a built-in tempature adjusters and a protective nanite infused metal.\n\nThis armour is used and manufactured by the night shade mercenarys</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
-            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+            <researchPrerequisite>NightShadePowerArmour</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>8</Crafting>
@@ -90,7 +90,7 @@
         <description>A high-tech armored helmet with a built-in aim adjuster and a protective nanite infused metal.\n\nThis armour is used and manufactured by the night shade mercenarys</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
-            <researchPrerequisite>PoweredArmor</researchPrerequisite>
+            <researchPrerequisite>NightShadePowerArmour</researchPrerequisite>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <skillRequirements>
                 <Crafting>8</Crafting>

@@ -12,7 +12,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -93,7 +93,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -175,7 +175,7 @@
         <soundInteract>Interact_ChargeRifle</soundInteract>
 
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -254,7 +254,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -327,7 +327,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -400,7 +400,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>12</Crafting>
             </skillRequirements>
@@ -476,7 +476,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>

@@ -54,7 +54,7 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -118,7 +118,7 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -173,7 +173,7 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>

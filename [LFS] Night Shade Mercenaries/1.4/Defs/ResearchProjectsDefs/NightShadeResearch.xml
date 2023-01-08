@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>PlasmaInfusions</defName>
+        <label>Plasma Infusions</label>
+        <description>The secrets to building Night Shades plasma-infused charge rifles</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>3000</baseCost>
+        <researchViewX>16.00</researchViewX>
+        <researchViewY>3.8</researchViewY>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>ChargedShot</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>NightShadePowerArmour</defName>
+        <label>Night Shade Power Armour</label>
+        <description>The secrets to infuse the horn of a shadum with marine armour</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>8000</baseCost>
+        <researchViewX>18.00</researchViewX>
+        <researchViewY>0.80</researchViewY>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>PoweredArmor</li>
+        </prerequisites>
+    </ResearchProjectDef>
+</Defs>
