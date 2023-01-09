@@ -21,9 +21,8 @@
         <graphicData>
             <texPath>Things/Appeal/A-NSG/A-NSG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <uiIconScale>1.4</uiIconScale>
+        <uiIconScale>1</uiIconScale>
         <statBases>
             <MarketValue>3000</MarketValue>
             <WorkToMake>75000</WorkToMake>
@@ -60,7 +59,6 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Appeal/A-NSG/A-NSG</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
@@ -105,9 +103,8 @@
         <graphicData>
             <texPath>Things/Appeal/H-NSG/H-NSG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
+        <uiIconScale>1</uiIconScale>
         <statBases>
             <MarketValue>3000</MarketValue>
             <WorkToMake>26250</WorkToMake>
@@ -139,7 +136,6 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Appeal/H-NSG/H-NSG</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>

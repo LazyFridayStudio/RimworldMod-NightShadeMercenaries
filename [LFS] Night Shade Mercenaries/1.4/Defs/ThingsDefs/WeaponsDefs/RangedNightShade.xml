@@ -206,6 +206,8 @@
             <ComponentIndustrial>3</ComponentIndustrial>
             <Shadum_Horn>1</Shadum_Horn>
         </costList>
+
+        <equippedAngleOffset>45</equippedAngleOffset>
         
         <verbs>
             <li>
@@ -432,6 +434,8 @@
             <Shadum_Horn>1</Shadum_Horn>
         </costList>
 
+        <equippedAngleOffset>45</equippedAngleOffset>
+        
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>

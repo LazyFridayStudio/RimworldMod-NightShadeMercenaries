@@ -199,7 +199,7 @@
             </li>
 
             <!-- Slaves -->
-            <li Class="StockGenerator_Slaves">
+            <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_Slaves">
                 <respectPopulationIntent>true</respectPopulationIntent>
                 <countRange>-1~2</countRange>
                 <slaveKindDef>Slave_Empire</slaveKindDef>
