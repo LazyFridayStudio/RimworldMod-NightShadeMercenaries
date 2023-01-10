@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!-- H-NSG -->
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>Apparel_ANSG_Standard</defName>
         <label>A-NSG "Power Armour"</label>
@@ -82,6 +83,7 @@
         </tradeTags>
     </ThingDef>
 
+    <!-- A-NSG -->
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>Apparel_HNSG_Standard</defName>
         <label>H-NSG "Power Helmet"</label>
@@ -143,6 +145,70 @@
                 <li>SpacerMilitary</li>
             </tags>
             <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(1,1,1,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- H-LNS -->
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_HLNG_Standard</defName>
+        <label>H-LNG</label>
+        <description>A</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Appeal/H-LNG/H-LNG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Appeal/H-LNG/H-LNG</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitaryAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
