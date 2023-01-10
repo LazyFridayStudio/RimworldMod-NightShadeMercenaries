@@ -159,7 +159,7 @@
         </tradeTags>
     </ThingDef>
 
-    <!-- H-LNS -->
+    <!-- H-LNG -->
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>Apparel_HLNG_Standard</defName>
         <label>H-LNG</label>
@@ -178,21 +178,23 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
-            <WorkToMake>8000</WorkToMake>
-            <MaxHitPoints>120</MaxHitPoints>
-            <Mass>1.2</Mass>
-            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1.5</EquipDelay>
+            <WorkToMake>1200</WorkToMake>
+            <MaxHitPoints>160</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.40</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
         </statBases>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-        <costStuffCount>40</costStuffCount>
+        <costStuffCount>120</costStuffCount>
         <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Plasteel>10</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plasteel>30</Plasteel>
         </costList>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>

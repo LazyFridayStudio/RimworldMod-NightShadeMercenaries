@@ -91,13 +91,13 @@
                 <!-- Offence -->
                 <kindDef>Combat</kindDef>
                 <options>
-                    <NS_Recruit>40</NS_Recruit>
-                    <NS_Meele>20</NS_Meele>
-                    <NS_Engineer>5</NS_Engineer>
-                    <NS_Specialist>5</NS_Specialist>
-                    <NS_Heavy>10</NS_Heavy>
-                    <NS_Medic>10</NS_Medic>
-                    <NS_General>2</NS_General>
+                    <NS_Recruit>4</NS_Recruit>
+                    <NS_Melee>4</NS_Melee>
+                    <NS_Engineer>0.5</NS_Engineer>
+                    <NS_Specialist>0.5</NS_Specialist>
+                    <NS_Heavy>1</NS_Heavy>
+                    <NS_Medic>1</NS_Medic>
+                    <NS_General>0.2</NS_General>
                 </options>
             </li>
 
@@ -106,7 +106,7 @@
                 <kindDef>Settlement</kindDef>
                 <options>
                     <NS_Recruit>40</NS_Recruit>
-                    <NS_Meele>20</NS_Meele>
+                    <NS_Melee>20</NS_Melee>
                     <NS_Engineer>5</NS_Engineer>
                     <NS_Specialist>5</NS_Specialist>
                     <NS_Heavy>10</NS_Heavy>
@@ -120,7 +120,7 @@
                 <kindDef>Peaceful</kindDef>
                 <options>
                     <NS_Recruit>4</NS_Recruit>
-                    <NS_Meele>1</NS_Meele>
+                    <NS_Melee>4</NS_Melee>
                     <NS_Engineer>1</NS_Engineer>
                     <NS_Specialist>2</NS_Specialist>
                     <NS_Heavy>3</NS_Heavy>
@@ -140,7 +140,7 @@
                 </carriers>
                 <guards>
                     <NS_Recruit>4</NS_Recruit>
-                    <NS_Meele>1</NS_Meele>
+                    <NS_Melee>4</NS_Melee>
                     <NS_Medic>2</NS_Medic>
                     <NS_Specialist>2</NS_Specialist>
                 </guards>
@@ -170,6 +170,8 @@
             <li>Apparel_ANSG_Standard</li>
         </apparelRequired>
 
+        <apparelColor>(77,77,77)</apparelColor>
+
         <apparelTags>
             <li>IndustrialAdvanced</li>
             <li>IndustrialMilitaryBasic</li>
@@ -186,6 +188,12 @@
         <defName>NS_Recruit</defName>
         <label>Night Shade Recruit</label>
         <combatPower>150</combatPower>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~8</range>
+            </li>
+        </skills>
 
         <weaponMoney>
             <min>800</min>
@@ -200,6 +208,14 @@
         <weaponTags>
             <li>NightShadeStandard</li>
         </weaponTags>
+
+        <apparelRequired Inherit="False">
+            <li>Apparel_FlakVest</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+            <li>Apparel_FlakPants</li>
+            <li>Apparel_HLNG_Standard</li>
+        </apparelRequired>
 
         <techHediffsMoney>
             <min>1000</min>
@@ -243,6 +259,13 @@
         <combatPower>700</combatPower>
         <canBeSapper>true</canBeSapper>
 
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
+
         <weaponMoney>
             <min>1500</min>
             <max>4000</max>
@@ -252,6 +275,8 @@
             <min>1</min>
             <max>2</max>
         </gearHealthRange>
+
+        <apparelColor Inherit="False">(130,130,130)</apparelColor>
         
         <weaponTags>
             <li>NightShadeDemo</li>
@@ -298,6 +323,13 @@
         <label>Night Shade Specialist</label>
         <combatPower>250</combatPower>
 
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~15</range>
+            </li>
+        </skills>
+
         <weaponMoney>
             <min>2000</min>
             <max>4000</max>
@@ -308,6 +340,14 @@
             <max>2</max>
         </gearHealthRange>
 
+        <apparelRequired Inherit="False">
+            <li>Apparel_FlakVest</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+            <li>Apparel_FlakPants</li>
+            <li>Apparel_HLNG_Standard</li>
+        </apparelRequired>
+        
         <weaponTags>
             <li>NightShadeSpecialist</li>
         </weaponTags>
@@ -353,6 +393,13 @@
         <label>Night Shade Heavy Weapons</label>
         <combatPower>300</combatPower>
 
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>20</range>
+            </li>
+        </skills>
+
         <weaponMoney>
             <min>2500</min>
             <max>4000</max>
@@ -366,6 +413,8 @@
         <weaponTags>
             <li>NightShadeHeavy</li>
         </weaponTags>
+
+        <apparelColor Inherit="False">(130,130,130)</apparelColor>
 
         <techHediffsMoney>
             <min>1000</min>
@@ -422,6 +471,16 @@
             <li>NightShadeStandard</li>
         </weaponTags>
 
+        <apparelColor Inherit="False">(0,128,255)</apparelColor>
+
+        <apparelRequired Inherit="False">
+            <li>Apparel_FlakVest</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+            <li>Apparel_FlakPants</li>
+            <li>Apparel_HLNG_Standard</li>
+        </apparelRequired>
+
         <techHediffsMoney>
             <min>1000</min>
             <max>2500</max>
@@ -464,6 +523,13 @@
         <combatPower>300</combatPower>
         <factionLeader>true</factionLeader>
 
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~15</range>
+            </li>
+        </skills>
+
         <weaponMoney>
             <min>2500</min>
             <max>4000</max>
@@ -477,6 +543,8 @@
         <weaponTags>
             <li>NightShadeHeavy</li>
         </weaponTags>
+
+        <apparelColor Inherit="False" >(255,204,0)</apparelColor>
 
         <techHediffsMoney>
             <min>1000</min>
@@ -513,12 +581,19 @@
         </inventoryOptions>
     </PawnKindDef>
 
-    <!-- Night Shade Meele  -->
+    <!-- Night Shade Melee  -->
     <PawnKindDef ParentName="NightShadeBase">
-        <defName>NS_Meele</defName>
-        <label>Night Shade General</label>
-        <combatPower>150</combatPower>
+        <defName>NS_Melee</defName>
+        <label>Night Shade Melee</label>
+        <combatPower>50</combatPower>
         <factionLeader>true</factionLeader>
+
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
 
         <weaponMoney>
             <min>2500</min>
@@ -530,8 +605,13 @@
             <max>2</max>
         </gearHealthRange>
 
-        <apparelRequired>
+        <apparelRequired Inherit="False">
             <li>Apparel_ShieldBelt</li>
+            <li>Apparel_FlakVest</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+            <li>Apparel_FlakPants</li>
+            <li>Apparel_HLNG_Standard</li>
         </apparelRequired>
 
         <weaponTags>
@@ -580,6 +660,13 @@
         <combatPower>150</combatPower>
         <trader>true</trader>
         <isFighter>false</isFighter>
+
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
         
         <weaponMoney>
             <min>2500</min>
