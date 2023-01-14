@@ -355,4 +355,114 @@
             </li>
         </tools>
     </ThingDef>
+
+    <!-- ==================== P-O250 (Pistol) ================================ -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>CE_Gun_P-O250_NS</defName>
+        <label>P-O250 "Pistol"</label>
+        <description>The P-O250 is a standard charge pistol. with a built in plasma infuser</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Weapons/P-O250</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+
+        <statBases>
+            <Mass>1</Mass>
+            <MarketValue>800</MarketValue>
+            <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.10</SightsEfficiency>
+            <ShotSpread>0.15</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <Bulk>2.25</Bulk>
+            <WorkToMake>25000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Steel>10</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Shadum_Horn>1</Shadum_Horn>
+        </costList>
+        
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.5</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>9x19_Plasma_Charge_Bullet</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>30</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>6</muzzleFlashScale>
+            </li>
+        </verbs>
+
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>21</magazineSize>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_9x19_PlasmaCharge</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>Snapshot</aiAimMode>
+            </li>
+        </comps>
+
+        <weaponTags>
+            <li>CE_Sidearm</li>
+            <li>CE_OneHandedWeapon</li>
+            <li>AdvancedGun</li>
+            <li>SpacerGun</li>
+            <li>CE_AI_BROOM</li>
+            <li>NightShadeStandard</li>
+        </weaponTags>
+
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.54</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.54</cooldownTime>
+                <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
 </Defs>
