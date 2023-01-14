@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Storage Settings -->
+    <ThingCategoryDef>
+        <defName>Ammo512PlasmaChargeRocket</defName>
+        <label>512 Plasma Charge Rocket</label>
+        <parent>AmmoAdvanced</parent>
+        <iconPath>UI/Icons/ThingCategories/CaliberGrenade</iconPath>
+    </ThingCategoryDef>
+
+    <!-- ========== AMMO SET ========= -->
+    <CombatExtended.AmmoSetDef>
+        <defName>AmmoSet_512_PlasmaCharge_rocket</defName>
+        <label>512 Plasma Charge Rocket</label>
+        <ammoTypes>
+            <Ammo_512_PlasmaCharge_Rocket>512_Plasma_Charge_Rocket_Bullet</Ammo_512_PlasmaCharge_Rocket>
+        </ammoTypes>
+        <similarTo>AmmoSet_LauncherGrenade</similarTo>
+    </CombatExtended.AmmoSetDef>
+
+    <!-- Ammo -->
+    <ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_512_PlasmaCharge_Rocket_Base" ParentName="SpacerMediumAmmoBase" Abstract="True">
+        <description>Standard 512 Plasma Charge Rocket</description>
+        <statBases>
+            <Mass>0.2</Mass>
+            <Bulk>0.5</Bulk>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableTrade</li>
+            <li>CE_AutoEnableCrafting</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Ammo512PlasmaChargeRocket</li>
+        </thingCategories>
+        <stackLimit>16</stackLimit>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_8x120_PlasmaCharge_Base">
+        <defName>Ammo_512_PlasmaCharge_Rocket</defName>
+        <label>512 Plasma Infused Charge Rocket</label>
+        <graphicData>
+            <texPath>Things/Ammo/Rocket/PG15V/HEAT</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>60</MarketValue>
+        </statBases>
+        <ammoClass>GrenadeHE</ammoClass>
+        <detonateProjectile>Bullet_40x46mmGrenade_HE</detonateProjectile>
+        <stackLimit>100</stackLimit>
+    </ThingDef>
+
+    <!-- Projectile -->
+    <ThingDef Name="512_Plasma_Charge_Rocket_Bullet_Base" ParentName="BaseBullet" Abstract="true">
+        <graphicData>
+            <texPath>Things/Projectile/R512</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Bullet</damageDef>
+            <speed>30</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="512_Plasma_Charge_Rocket_Bullet_Base">
+        <defName>512_Plasma_Charge_Rocket_Bullet</defName>
+        <label>512 Plasma Charge Rocket</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <explosionRadius>2</explosionRadius >
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>31</damageAmountBase>
+            <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+        </projectile>
+        <comps>
+            <li Class="CombatExtended.CompProperties_Fragments">
+                <fragments>
+                    <Fragment_Small>19</Fragment_Small>
+                </fragments>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- Recipe -->
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeAmmo_512_PlasmaCharge_Rocket</defName>
+        <label>Make 512 Plasma Charge x400</label>
+        <description>Craft 10 512 Plasma Charge Rockets.</description>
+        <jobString>Making 512 Plasma Charge Rockets.</jobString>
+        <researchPrerequisite Inherit="False">PlasmaInfusions</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>FSX</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_512_PlasmaCharge_Rocket>10</Ammo_512_PlasmaCharge_Rocket>
+        </products>
+        <workAmount>9000</workAmount>
+    </RecipeDef>
+</Defs>

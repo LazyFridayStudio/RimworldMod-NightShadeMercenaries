@@ -21,7 +21,7 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-        
+
         <weaponClasses>
             <li>RangedHeavy</li>
         </weaponClasses>
@@ -45,7 +45,7 @@
             <Shadum_Horn>1</Shadum_Horn>
         </costList>
 
-        
+
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>1.40</recoilAmount>
@@ -55,13 +55,13 @@
                 <warmupTime>1</warmupTime>
                 <range>55</range>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-                <burstShotCount>4</burstShotCount>
+                <burstShotCount>5</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
         </verbs>
-        
+
         <comps>
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>40</magazineSize>
@@ -69,12 +69,10 @@
                 <ammoSet>AmmoSet_6x45_PlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
-                <aiUseBurstMode>FALSE</aiUseBurstMode>
                 <aiAimMode>Snapshot</aiAimMode>
-                <aimedBurstShotCount>5</aimedBurstShotCount>
             </li>
         </comps>
-        
+
         <weaponTags>
             <li>CE_MachineGun</li>
             <li>CE_AI_LMG</li>
@@ -82,7 +80,7 @@
             <li>SpacerGun</li>
             <li>NightShadeStandard</li>
         </weaponTags>
-        
+
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -166,7 +164,7 @@
             <ComponentIndustrial>2</ComponentIndustrial>
             <Shadum_Horn>1</Shadum_Horn>
         </costList>
-        
+
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>2.85</recoilAmount>
@@ -400,7 +398,7 @@
             <ComponentIndustrial>1</ComponentIndustrial>
             <Shadum_Horn>1</Shadum_Horn>
         </costList>
-        
+
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <recoilAmount>2.5</recoilAmount>
@@ -551,6 +549,255 @@
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
 
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2.02</cooldownTime>
+                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- ==================== L-M19 (Light Machine Gun) ================================ -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>CE_Gun_LM19_NS</defName>
+        <label>L-M19 "LMG"</label>
+        <description>The L-19 is a standard response charge light machine gun. with a built in plasma infuser</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Weapons/L-M19</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+
+        <statBases>
+            <Mass>7</Mass>
+            <MarketValue>3500</MarketValue>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <Bulk>14</Bulk>
+            <WorkToMake>69000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Steel>50</Steel>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Shadum_Horn>1</Shadum_Horn>
+        </costList>
+
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>0.8</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>6x45_Plasma_Charge_Bullet</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>60</range>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <burstShotCount>16</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>11</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <recoilPattern>Mounted</recoilPattern>
+            </li>
+        </verbs>
+
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>100</magazineSize>
+                <reloadTime>12</reloadTime>
+                <ammoSet>AmmoSet_6x45_PlasmaCharge</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>SuppressFire</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+        </comps>
+
+        <weaponTags>
+            <li>CE_MachineGun</li>
+            <li>CE_AI_LMG</li>
+            <li>AdvancedGun</li>
+            <li>SpacerGun</li>
+            <li>Bipod_LMG</li>
+            <li>NightShadeHeavy</li>
+        </weaponTags>
+
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2.02</cooldownTime>
+                <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- ==================== R-JC19 (Rocket Luncher) ================================ -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>CE_Gun_RJC19_NS</defName>
+        <label>R-JC19 "Grenade Luncher"</label>
+        <description>The R-JC19 is a standard grenade launcher, Shooting an charged explosive infused with plasma, with the use of stack reloading, it can be used more than once</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Weapons/R-JC19</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+
+        <statBases>
+            <Mass>5</Mass>
+            <MarketValue>5000</MarketValue>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.18</ShotSpread>
+            <SwayFactor>1.31</SwayFactor>
+            <Bulk>5.6</Bulk>
+            <WorkToMake>62000</WorkToMake>
+        </statBases>
+
+        <costList>
+            <Steel>150</Steel>
+            <Plasteel>200</Plasteel>
+            <ComponentSpacer>5</ComponentSpacer>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Shadum_Horn>1</Shadum_Horn>
+        </costList>
+
+        <equippedAngleOffset>45</equippedAngleOffset>
+
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>3</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>512_Plasma_Charge_Rocket_Bullet</defaultProjectile>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <warmupTime>1</warmupTime>
+                <range>45</range>
+                <minRange>5</minRange>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+            </li>
+        </verbs>
+
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>AmmoSet_512_PlasmaCharge_rocket</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>SuppressFire</aiAimMode>
+            </li>
+        </comps>
+
+        <weaponTags>
+            <li>GunHeavy</li>
+            <li>CE_AI_AOE</li>
+            <li>NightShadeDemo</li>
+        </weaponTags>
+
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
         <tools>
             <li Class="CombatExtended.ToolCE">
                 <label>stock</label>

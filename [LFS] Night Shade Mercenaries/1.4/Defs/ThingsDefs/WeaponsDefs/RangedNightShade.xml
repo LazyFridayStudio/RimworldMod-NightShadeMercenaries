@@ -394,7 +394,7 @@
     <!-- ==================== R-512 (Rocket Luncher) ================================ -->
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Gun_RJC19_NS</defName>
-        <label>R-JC19 "Rocket Luncher"</label>
+        <label>R-JC19 "Grenade Launcher"</label>
         <description>The R-JC19 is a standard Charge Rocket luncher, Shooting an charged explosive infused with plasma, with the use of stack reloading, it can be used more than once</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
