@@ -11,6 +11,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
+        
         <recipeMaker>
             <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
             <skillRequirements>
@@ -50,7 +51,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>NS_Bullet_P21_Standard</defaultProjectile>
                 <warmupTime>1</warmupTime>
-                <range>28</range>
+                <range>60</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                 <burstShotCount>4</burstShotCount>
                 <soundCast>Shot_ChargeRifle</soundCast>

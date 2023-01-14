@@ -177,6 +177,7 @@
             <texPath>Things/Appeal/H-LNG/H-LNG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>2</uiIconScale>
         <statBases>
             <WorkToMake>1200</WorkToMake>
             <MaxHitPoints>160</MaxHitPoints>

@@ -3,7 +3,7 @@
     <!-- P21 - Assault Rifle -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_P21_Standard</defName>
-        <label>Standard 5.56x45 caliber charge shot infused with plasma</label>
+        <label>Standard 6x45 Plasma Charge</label>
         <graphicData>
             <texPath>Things/Projectile/P21</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -20,7 +20,7 @@
     <!-- P30 - Light Machine Gun -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_P30_Standard</defName>
-        <label>Standard 5.56x45 caliber charge shot infused with plasma</label>
+        <label>Standard 5.56x45 Plasma Charge</label>
         <graphicData>
             <texPath>Things/Projectile/P21</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -37,7 +37,7 @@
     <!-- P10 - Shotgun -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_P10_Standard</defName>
-        <label>Standard 12 Gauge charge pellets infused with plasma</label>
+        <label>Standard 12 Gauge Plasma Charge</label>
         <graphicData>
             <texPath>Things/Projectile/P10</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -54,7 +54,7 @@
     <!-- P50 - Sniper -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_P50_Standard</defName>
-        <label>Standard .50 caliber charge shot infused with plasma, Will set things on fire</label>
+        <label>Standard 50x230 caliber Plasma Charge</label>
         <graphicData>
             <texPath>Things/Projectile/P50</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -71,7 +71,7 @@
     <!-- P3 - Light Arm -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_P3_Standard</defName>
-        <label>Standard 9x19 caliber charge shot infused with plasma</label>
+        <label>Standard 9x19 Plasma Charge</label>
         <graphicData>
             <texPath>Things/Projectile/P3</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -88,7 +88,7 @@
     <!-- P1 - Pistol -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_P1_Standard</defName>
-        <label>Standard .45 caliber charge shot infused with plasma</label>
+        <label>Standard .45 Plasma Charge</label>
         <graphicData>
             <texPath>Things/Projectile/P3</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -105,7 +105,7 @@
     <!-- R512 - Rocket  -->
     <ThingDef ParentName="BaseBullet">
         <defName>NS_Bullet_R512_Standard</defName>
-        <label>Standard R512 Rocket</label>
+        <label>Standard R512 Grenade</label>
         <graphicData>
             <texPath>Things/Projectile/R512</texPath>
             <graphicClass>Graphic_Single</graphicClass>

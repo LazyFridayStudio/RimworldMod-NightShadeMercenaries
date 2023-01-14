@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Storage Settings -->
+    <ThingCategoryDef>
+        <defName>Ammo12GaugePlasmaCharge</defName>
+        <label>12 Gauge Plasma Charge</label>
+        <parent>AmmoAdvanced</parent>
+        <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
+    </ThingCategoryDef>
+
+    <!-- ========== AMMO SET ========= -->
+    <CombatExtended.AmmoSetDef>
+        <defName>AmmoSet_12Gauge_PlasmaCharge</defName>
+        <label>12 Gauge Plasma Charge</label>
+        <ammoTypes>
+            <Ammo_12Gauge_PlasmaCharge>12Gauge_Plasma_Charge_Bullet</Ammo_12Gauge_PlasmaCharge>
+        </ammoTypes>
+        <similarTo>AmmoSet_ChargedShotgun</similarTo>
+    </CombatExtended.AmmoSetDef>
+
+    <!-- Ammo -->
+    <ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_12Gauge_PlasmaCharge_Base" ParentName="SpacerAmmoBase" Abstract="True">
+        <description>Standard 12 Guage Plasma Charge</description>
+        <statBases>
+            <Mass>0.043</Mass>
+            <Bulk>0.04</Bulk>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableTrade</li>
+            <li>CE_AutoEnableCrafting</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Ammo12GaugePlasmaCharge</li>
+        </thingCategories>
+        <stackLimit>500</stackLimit>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_12Gauge_PlasmaCharge_Base">
+        <defName>Ammo_12Gauge_PlasmaCharge</defName>
+        <label>12 Gauge Plasma Infused Charge Pellets</label>
+        <graphicData>
+            <texPath>Things/Ammo/Charged/ShotgunRegular</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>4.21</MarketValue>
+        </statBases>
+        <ammoClass>Charged</ammoClass>
+        <stackLimit>200</stackLimit>
+    </ThingDef>
+
+    <!-- ================== Projectiles ================== -->
+
+    <ThingDef Name="12Gauge_Plasma_Charge_Bullet_Base" ParentName="BaseBullet" Abstract="true">
+        <graphicData>
+            <texPath>Things/Projectile/P10_Single_Pellet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Bullet</damageDef>
+            <speed>120</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="12Gauge_Plasma_Charge_Bullet_Base">
+        <defName>12Gauge_Plasma_Charge_Bullet</defName>
+        <label>12 Gauge Plasma Charge Pellets</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageAmountBase>15</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>3</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>8</armorPenetrationSharp>
+            <armorPenetrationBlunt>14.4</armorPenetrationBlunt>
+            <pelletCount>10</pelletCount>
+            <spreadMult>8.9</spreadMult>
+        </projectile>
+    </ThingDef>
+
+    <!-- ==================== Recipes ========================== -->
+
+    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+        <defName>MakeAmmo_12Gauge_PlasmaCharge</defName>
+        <label>Make 12 Gauge Plasma Charged shell x200</label>
+        <description>Craft 200 12Gauge Charged shells.</description>
+        <jobString>Making 12Gauge Charged shells.</jobString>
+        <researchPrerequisite Inherit="False">PlasmaInfusions</researchPrerequisite>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_12Gauge_PlasmaCharge>200</Ammo_12Gauge_PlasmaCharge>
+        </products>
+        <workAmount>21000</workAmount>
+    </RecipeDef>
+</Defs>

@@ -132,7 +132,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>Melee_HHM12_NS</defName>
         <label>H-HM12 "Hammer"</label>
-        <description>A Short blunt hammer with built in plasma plates</description>
+        <description>A Short Axe with built in plasma plates</description>
         <graphicData>
             <texPath>Things/Weapons/H-HM12</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -166,10 +166,11 @@
                 <label>edge</label>
                 <capacities>
                     <li>Blunt</li>
+                    <li>Cut</li>
                 </capacities>
-                <power>30</power>
+                <power>35</power>
                 <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.25</armorPenetration>
+                <armorPenetration>0.7</armorPenetration>
             </li>
         </tools>
         <recipeMaker>
