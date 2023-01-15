@@ -20,4 +20,110 @@
             <min>3500</min>
         </value>
     </Operation>
+
+
+    <!-- Magazine Loadout -->
+    <!-- Night Shade Recruit -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Recruit"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade engineer  -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Engineer"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade Specialist  -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Specialist"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade Heavy  -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Heavy"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade Medic -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Medic"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade General  -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_General"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade Melee  -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Melee"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>0</min>
+                    <max>1</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Night Shade Trader  -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/PawnKindDef[defName="NS_Trader"]</xpath>
+        <value>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </value>
+    </Operation>
 </Patch>

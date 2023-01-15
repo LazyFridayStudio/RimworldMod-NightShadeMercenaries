@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- H-NSG -->
+    <!-- A-NSG -->
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>Apparel_ANSG_Standard</defName>
         <label>A-NSG "Power Armour"</label>
@@ -83,7 +83,7 @@
         </tradeTags>
     </ThingDef>
 
-    <!-- A-NSG -->
+    <!-- H-NSG -->
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>Apparel_HNSG_Standard</defName>
         <label>H-NSG "Power Helmet"</label>
@@ -182,6 +182,7 @@
             <WorkToMake>1200</WorkToMake>
             <MaxHitPoints>160</MaxHitPoints>
             <Mass>1.5</Mass>
+            <Flammability>0.2</Flammability>
             <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
             <ArmorRating_Heat>0.40</ArmorRating_Heat>
