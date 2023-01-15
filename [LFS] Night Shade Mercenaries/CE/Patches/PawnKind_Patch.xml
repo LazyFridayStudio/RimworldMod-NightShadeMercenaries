@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="NS_Engineer"]/weaponMoney/min</xpath>
+        <value>
+            <min>5000</min>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="NS_Heavy"]/weaponMoney/min</xpath>
+        <value>
+            <min>3500</min>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="NS_General"]/weaponMoney/min</xpath>
+        <value>
+            <min>3500</min>
+        </value>
+    </Operation>
+</Patch>

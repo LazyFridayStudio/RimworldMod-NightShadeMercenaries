@@ -10,16 +10,16 @@
 
     <!-- ========== AMMO SET ========= -->
     <CombatExtended.AmmoSetDef>
-        <defName>AmmoSet_12Gauge_PlasmaCharge</defName>
+        <defName>AmmoSet_12GaugePlasmaCharge</defName>
         <label>12 Gauge Plasma Charge</label>
         <ammoTypes>
-            <Ammo_12Gauge_PlasmaCharge>12Gauge_Plasma_Charge_Bullet</Ammo_12Gauge_PlasmaCharge>
+            <Ammo_12GaugePlasmaCharge>Bullet_12GaugePlasmaCharge</Ammo_12GaugePlasmaCharge>
         </ammoTypes>
         <similarTo>AmmoSet_ChargedShotgun</similarTo>
     </CombatExtended.AmmoSetDef>
 
     <!-- Ammo -->
-    <ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_12Gauge_PlasmaCharge_Base" ParentName="SpacerAmmoBase" Abstract="True">
+    <ThingDef Class="CombatExtended.AmmoDef" Name="12GaugePlasmaChargeBase" ParentName="SpacerAmmoBase" Abstract="True">
         <description>Standard 12 Guage Plasma Charge</description>
         <statBases>
             <Mass>0.043</Mass>
@@ -35,8 +35,8 @@
         <stackLimit>500</stackLimit>
     </ThingDef>
 
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_12Gauge_PlasmaCharge_Base">
-        <defName>Ammo_12Gauge_PlasmaCharge</defName>
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugePlasmaChargeBase">
+        <defName>Ammo_12GaugePlasmaCharge</defName>
         <label>12 Gauge Plasma Infused Charge Pellets</label>
         <graphicData>
             <texPath>Things/Ammo/Charged/ShotgunRegular</texPath>
@@ -51,7 +51,7 @@
 
     <!-- ================== Projectiles ================== -->
 
-    <ThingDef Name="12Gauge_Plasma_Charge_Bullet_Base" ParentName="BaseBullet" Abstract="true">
+    <ThingDef Name="Base_12GaugePlasmaChargeBullet" ParentName="BaseBullet" Abstract="true">
         <graphicData>
             <texPath>Things/Projectile/P10_Single_Pellet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -62,8 +62,8 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="12Gauge_Plasma_Charge_Bullet_Base">
-        <defName>12Gauge_Plasma_Charge_Bullet</defName>
+    <ThingDef ParentName="Base_12GaugePlasmaChargeBullet">
+        <defName>Bullet_12GaugePlasmaCharge</defName>
         <label>12 Gauge Plasma Charge Pellets</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageAmountBase>15</damageAmountBase>
@@ -83,7 +83,7 @@
     <!-- ==================== Recipes ========================== -->
 
     <RecipeDef ParentName="ChargeAmmoRecipeBase">
-        <defName>MakeAmmo_12Gauge_PlasmaCharge</defName>
+        <defName>MakeAmmo_12GaugePlasmaCharge</defName>
         <label>Make 12 Gauge Plasma Charged shell x200</label>
         <description>Craft 200 12Gauge Charged shells.</description>
         <jobString>Making 12Gauge Charged shells.</jobString>
@@ -122,7 +122,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Ammo_12Gauge_PlasmaCharge>200</Ammo_12Gauge_PlasmaCharge>
+            <Ammo_12GaugePlasmaCharge>200</Ammo_12GaugePlasmaCharge>
         </products>
         <workAmount>21000</workAmount>
     </RecipeDef>

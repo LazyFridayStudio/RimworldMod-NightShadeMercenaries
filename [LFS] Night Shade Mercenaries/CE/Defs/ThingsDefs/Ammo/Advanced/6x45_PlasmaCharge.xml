@@ -2,83 +2,84 @@
 <Defs>
     <!-- Storage Settings -->
     <ThingCategoryDef>
-        <defName>Ammo9x19PlasmaCharge</defName>
-        <label>9x19 Plasma Charge</label>
+        <defName>Ammo6x45PlasmaCharge</defName>
+        <label>6x45 Plasma Charge</label>
         <parent>AmmoAdvanced</parent>
         <iconPath>UI/Icons/ThingCategories/CaliberRifle</iconPath>
     </ThingCategoryDef>
 
     <!-- ========== AMMO SET ========= -->
     <CombatExtended.AmmoSetDef>
-        <defName>AmmoSet_9x19_PlasmaCharge</defName>
-        <label>9x19 Plasma Charge</label>
+        <defName>AmmoSet_6x45PlasmaCharge</defName>
+        <label>6x45 Plasma Charge</label>
         <ammoTypes>
-            <Ammo_9x19_PlasmaCharge>9x19_Plasma_Charge_Bullet</Ammo_9x19_PlasmaCharge>
+            <Ammo_6x45PlasmaCharge>Bullet_6x45PlasmaCharge</Ammo_6x45PlasmaCharge>
         </ammoTypes>
-        <similarTo>AmmoSet_ChargedPistol</similarTo>
+        <similarTo>AmmoSet_Rifle</similarTo>
     </CombatExtended.AmmoSetDef>
 
     <!-- Ammo -->
-    <ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_9x19_PlasmaCharge_Base" ParentName="SpacerSmallAmmoBase" Abstract="True">
-        <description>Standard 9x19 Plasma Charge</description>
+    <ThingDef Class="CombatExtended.AmmoDef" Name="6x45PlasmaChargeBase" ParentName="SpacerMediumAmmoBase" Abstract="True">
+        <description>Standard 6x45 Plasma Charge</description>
         <statBases>
-            <Mass>0.017</Mass>
-            <Bulk>0.001</Bulk>
+            <Mass>0.058</Mass>
+            <Bulk>0.04</Bulk>
         </statBases>
         <tradeTags>
             <li>CE_AutoEnableTrade</li>
             <li>CE_AutoEnableCrafting</li>
         </tradeTags>
         <thingCategories>
-            <li>Ammo9x19PlasmaCharge</li>
+            <li>Ammo6x45PlasmaCharge</li>
         </thingCategories>
-        <stackLimit>500</stackLimit>
+        <stackLimit>5000</stackLimit>
     </ThingDef>
-
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_9x19_PlasmaCharge_Base">
-        <defName>Ammo_9x19_PlasmaCharge</defName>
-        <label>9x19 Plasma Infused Charge Cartridge</label>
+    
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="6x45PlasmaChargeBase">
+        <defName>Ammo_6x45PlasmaCharge</defName>
+        <label>6x45 Plasma Infused Charge Cartridge</label>
         <graphicData>
             <texPath>Things/Ammo/Charged/LargeRegular</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>0.5</MarketValue>
+            <MarketValue>6.78</MarketValue>
         </statBases>
         <ammoClass>Charged</ammoClass>
-        <stackLimit>250</stackLimit>
+        <stackLimit>5000</stackLimit>
+        <cookOffProjectile>Bullet_6x45PlasmaCharge</cookOffProjectile>
     </ThingDef>
-
+    
     <!-- Projectile -->
-    <ThingDef Name="9x19_Plasma_Charge_Bullet_Base" ParentName="BaseBullet" Abstract="true">
+    <ThingDef Name="Base6x45PlasmaChargeBullet" ParentName="BaseBullet" Abstract="true">
         <graphicData>
-            <texPath>Things/Projectile/P3</texPath>
+            <texPath>Things/Projectile/P21</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(1,1)</drawSize>
         </graphicData>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageDef>Bullet</damageDef>
-            <speed>100</speed>
+            <speed>180</speed>
         </projectile>
     </ThingDef>
-
-    <ThingDef ParentName="9x19_Plasma_Charge_Bullet_Base">
-        <defName>9x19_Plasma_Charge_Bullet</defName>
-        <label>9x19 Plasma Charge</label>
+    
+    <ThingDef ParentName="Base6x45PlasmaChargeBullet">
+        <defName>Bullet_6x45PlasmaCharge</defName>
+        <label>6x45 Plasma Charge</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <damageAmountBase>11</damageAmountBase>
-            <armorPenetrationSharp>26</armorPenetrationSharp>
-            <armorPenetrationBlunt>25</armorPenetrationBlunt>
+            <damageAmountBase>39</damageAmountBase>
+            <armorPenetrationSharp>30</armorPenetrationSharp>
+            <armorPenetrationBlunt>324</armorPenetrationBlunt>
         </projectile>
     </ThingDef>
-
+    
     <!-- Recipe -->
     <RecipeDef ParentName="AmmoRecipeBase">
-        <defName>MakeAmmo_9x19_PlasmaCharge</defName>
-        <label>Make 9x19 Plasma Charge x400</label>
-        <description>Craft 250 9x19 Plasma Charge Cartridges.</description>
-        <jobString>Making 9x19 Plasma Charge Cartridges.</jobString>
-        <researchPrerequisite Inherit="False">PlasmaInfusions</researchPrerequisite>
+        <defName>MakeAmmo_6x45PlasmaCharge</defName>
+        <label>Make 6x45 Plasma Charge x400</label>
+        <description>Craft 400 6x45 Plasma Charge Cartridges.</description>
+        <jobString>Making 6x45 Plasma Charge Cartridges.</jobString>
+        <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
         <ingredients>
             <li>
                 <filter>
@@ -86,7 +87,7 @@
                         <li>Plasteel</li>
                     </thingDefs>
                 </filter>
-                <count>25</count>
+                <count>32</count>
             </li>
             <li>
                 <filter>
@@ -94,7 +95,7 @@
                         <li>Steel</li>
                     </thingDefs>
                 </filter>
-                <count>10</count>
+                <count>8</count>
             </li>
             <li>
                 <filter>
@@ -102,7 +103,7 @@
                         <li>ComponentIndustrial</li>
                     </thingDefs>
                 </filter>
-                <count>8</count>
+                <count>32</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -113,8 +114,8 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Ammo_9x19_PlasmaCharge>250</Ammo_9x19_PlasmaCharge>
+            <Ammo_6x45PlasmaCharge>400</Ammo_6x45PlasmaCharge>
         </products>
-        <workAmount>20800</workAmount>
+        <workAmount>32800</workAmount>
     </RecipeDef>
 </Defs>

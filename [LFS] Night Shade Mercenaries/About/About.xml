@@ -15,5 +15,7 @@
     </modDependencies>
     <loadAfter>
         <li>Ludeon.RimWorld</li>
+        <li>CEteam.CombatExtended</li>
+        <li>IssacZhuang.MuzzleFlash</li>
     </loadAfter>
 </ModMetaData>

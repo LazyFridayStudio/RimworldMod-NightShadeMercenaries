@@ -10,16 +10,16 @@
 
     <!-- ========== AMMO SET ========= -->
     <CombatExtended.AmmoSetDef>
-        <defName>AmmoSet_8x120_PlasmaCharge</defName>
+        <defName>AmmoSet_8x120PlasmaCharge</defName>
         <label>8x120 Plasma Charge</label>
         <ammoTypes>
-            <Ammo_8x120_PlasmaCharge>8x120_Plasma_Charge_Bullet</Ammo_8x120_PlasmaCharge>
+            <Ammo_8x120PlasmaCharge>Bullet_8x120PlasmaCharge</Ammo_8x120PlasmaCharge>
         </ammoTypes>
         <similarTo>AmmoSet_Rifle</similarTo>
     </CombatExtended.AmmoSetDef>
 
     <!-- Ammo -->
-    <ThingDef Class="CombatExtended.AmmoDef" Name="Ammo_8x120_PlasmaCharge_Base" ParentName="SpacerMediumAmmoBase" Abstract="True">
+    <ThingDef Class="CombatExtended.AmmoDef" Name="8x120PlasmaChargeBase" ParentName="SpacerMediumAmmoBase" Abstract="True">
         <description>Standard 8x120 Plasma Charge</description>
         <statBases>
             <Mass>0.03</Mass>
@@ -35,8 +35,8 @@
         <stackLimit>5000</stackLimit>
     </ThingDef>
 
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo_8x120_PlasmaCharge_Base">
-        <defName>Ammo_8x120_PlasmaCharge</defName>
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="8x120PlasmaChargeBase">
+        <defName>Ammo_8x120PlasmaCharge</defName>
         <label>8x120 Plasma Infused Charge Cartridge</label>
         <graphicData>
             <texPath>Things/Ammo/Charged/LargeRegular</texPath>
@@ -50,7 +50,7 @@
     </ThingDef>
 
     <!-- Projectile -->
-    <ThingDef Name="8x120_Plasma_Charge_Bullet_Base" ParentName="BaseBullet" Abstract="true">
+    <ThingDef Name="Base8x120PlasmaChargeBullet" ParentName="BaseBullet" Abstract="true">
         <graphicData>
             <texPath>Things/Projectile/P50</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -62,8 +62,8 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="8x120_Plasma_Charge_Bullet_Base">
-        <defName>8x120_Plasma_Charge_Bullet</defName>
+    <ThingDef ParentName="Base8x120PlasmaChargeBullet">
+        <defName>Bullet_8x120PlasmaCharge</defName>
         <label>8x120 Plasma Charge</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageAmountBase>55</damageAmountBase>
@@ -74,11 +74,11 @@
 
     <!-- Recipe -->
     <RecipeDef ParentName="AmmoRecipeBase">
-        <defName>MakeAmmo_8x120_PlasmaCharge</defName>
+        <defName>MakeAmmo_8x120PlasmaCharge</defName>
         <label>Make 8x120 Plasma Charge x400</label>
         <description>Craft 100 8x120 Plasma Charge Cartridges.</description>
         <jobString>Making 8x120 Plasma Charge Cartridges.</jobString>
-        <researchPrerequisite Inherit="False">PlasmaInfusions</researchPrerequisite>
+        <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
         <ingredients>
             <li>
                 <filter>
@@ -113,7 +113,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Ammo_8x120_PlasmaCharge>100</Ammo_8x120_PlasmaCharge>
+            <Ammo_8x120PlasmaCharge>100</Ammo_8x120PlasmaCharge>
         </products>
         <workAmount>32800</workAmount>
     </RecipeDef>

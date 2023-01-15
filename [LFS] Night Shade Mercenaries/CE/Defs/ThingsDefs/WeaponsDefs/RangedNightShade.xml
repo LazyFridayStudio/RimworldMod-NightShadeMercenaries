@@ -51,7 +51,7 @@
                 <recoilAmount>1.40</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>6x45_Plasma_Charge_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_6x45PlasmaCharge</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>55</range>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
@@ -66,7 +66,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>40</magazineSize>
                 <reloadTime>4</reloadTime>
-                <ammoSet>AmmoSet_6x45_PlasmaCharge</ammoSet>
+                <ammoSet>AmmoSet_6x45PlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiAimMode>Snapshot</aiAimMode>
@@ -170,7 +170,7 @@
                 <recoilAmount>2.85</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>12Gauge_Plasma_Charge_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_12GaugePlasmaCharge</defaultProjectile>
                 <warmupTime>0.5</warmupTime>
                 <range>24</range>
                 <soundCast>Shot_ChargeRifle</soundCast>
@@ -183,7 +183,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>8</magazineSize>
                 <reloadTime>3.3</reloadTime>
-                <ammoSet>AmmoSet_12Gauge_PlasmaCharge</ammoSet>
+                <ammoSet>AmmoSet_12GaugePlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiAimMode>Snapshot</aiAimMode>
@@ -287,7 +287,7 @@
                 <recoilAmount>2.1</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>8x120_Plasma_Charge_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_8x120PlasmaCharge</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>65</range>
                 <burstShotCount>1</burstShotCount>
@@ -301,7 +301,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>10</magazineSize>
                 <reloadTime>5</reloadTime>
-                <ammoSet>AmmoSet_8x120_PlasmaCharge</ammoSet>
+                <ammoSet>AmmoSet_8x120PlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiAimMode>AimedShot</aiAimMode>
@@ -404,7 +404,7 @@
                 <recoilAmount>2.5</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>9x19_Plasma_Charge_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_9x19PlasmaCharge</defaultProjectile>
                 <warmupTime>0.3</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -419,7 +419,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>21</magazineSize>
                 <reloadTime>2.1</reloadTime>
-                <ammoSet>AmmoSet_9x19_PlasmaCharge</ammoSet>
+                <ammoSet>AmmoSet_9x19PlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiAimMode>Snapshot</aiAimMode>
@@ -514,7 +514,7 @@
                 <recoilAmount>1.2</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>9x19_Plasma_Charge_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_9x19PlasmaCharge</defaultProjectile>
                 <warmupTime>0.4</warmupTime>
                 <range>35</range>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -529,7 +529,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>45</magazineSize>
                 <reloadTime>2.1</reloadTime>
-                <ammoSet>AmmoSet_9x19_PlasmaCharge</ammoSet>
+                <ammoSet>AmmoSet_9x19PlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiAimMode>Snapshot</aiAimMode>
@@ -634,7 +634,7 @@
                 <recoilAmount>0.8</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>6x45_Plasma_Charge_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_6x45PlasmaCharge</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>60</range>
                 <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
@@ -653,7 +653,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>100</magazineSize>
                 <reloadTime>12</reloadTime>
-                <ammoSet>AmmoSet_6x45_PlasmaCharge</ammoSet>
+                <ammoSet>AmmoSet_6x45PlasmaCharge</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -762,7 +762,7 @@
                 <recoilAmount>3</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>512_Plasma_Charge_Rocket_Bullet</defaultProjectile>
+                <defaultProjectile>Bullet_PlasmaChargeRocketBullet</defaultProjectile>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <warmupTime>1</warmupTime>
                 <range>45</range>
@@ -781,7 +781,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>5</magazineSize>
                 <reloadTime>6</reloadTime>
-                <ammoSet>AmmoSet_512_PlasmaCharge_rocket</ammoSet>
+                <ammoSet>AmmoSet_PlasmaChargeRocket</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>FALSE</aiUseBurstMode>

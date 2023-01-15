@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_ART500_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1,1)</drawSize>
+                            <offsets>
+                                <li>(0.5,-0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_SJ51_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1,1.5)</drawSize>
+                            <offsets>
+                                <li>(0.53,0.04)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_SNM12_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1.6,1.2)</drawSize>
+                            <offsets>
+                                <li>(0.66,-0.06)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_P-O250_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.6,0.6)</drawSize>
+                            <offsets>
+                                <li>(0.3,0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_SG-I45_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.6,0.6)</drawSize>
+                            <offsets>
+                                <li>(0.34,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_LM19_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1.3,1.3)</drawSize>
+                            <offsets>
+                                <li>(0.55,0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="CE_Gun_RJC19_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalsh</def>
+                            <drawSize>(1.5,1.5)</drawSize>
+                            <offsets>
+                                <li>(0.55,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_ART500_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1,1)</drawSize>
+                            <offsets>
+                                <li>(0.5,-0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_SJ51_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1,1.5)</drawSize>
+                            <offsets>
+                                <li>(0.53,0.04)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_SNM12_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1.6,1.2)</drawSize>
+                            <offsets>
+                                <li>(0.66,-0.06)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_PO250_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.6,0.6)</drawSize>
+                            <offsets>
+                                <li>(0.3,0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_SGI45_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.6,0.6)</drawSize>
+                            <offsets>
+                                <li>(0.34,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_LM19_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(1.3,1.3)</drawSize>
+                            <offsets>
+                                <li>(0.55,0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_RJC19_NS"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalsh</def>
+                            <drawSize>(1.5,1.5)</drawSize>
+                            <offsets>
+                                <li>(0.55,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+</Patch>
