@@ -125,8 +125,7 @@
             </li>
         </tools>
     </ThingDef>
-
-    <!-- Base -->
+   
     <PawnKindDef Name="Shadum" ParentName="AnimalKindBase">
         <defName>Shadum</defName>
         <label>Shadum</label>
@@ -185,5 +184,4 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-    
 </Defs>
