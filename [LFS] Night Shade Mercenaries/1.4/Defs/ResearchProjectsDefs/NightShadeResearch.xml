@@ -27,4 +27,14 @@
             <li>PoweredArmor</li>
         </prerequisites>
     </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>DarvonishumResearch</defName>
+        <label>Darvonishum</label>
+        <description>Plant Darvonishum, a slow-growing mushroom that yields an exceptionally nutritious mushroom</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>3.20</researchViewY>
+    </ResearchProjectDef>
 </Defs>
