@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>Zearot_Category</defName>
+        <label>Zearot Genes</label>
+        <displayPriorityInXenotype>291</displayPriorityInXenotype>
+        <displayPriorityInGenepack>-130</displayPriorityInGenepack>
+    </GeneCategoryDef>
+</Defs>

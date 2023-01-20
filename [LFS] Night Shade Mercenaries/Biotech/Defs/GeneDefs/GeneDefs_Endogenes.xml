@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Small Horn -->
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>Headbone_SmallHorns_NS</defName>
+        <displayCategory>Zearot_Category</displayCategory>
+        <label>Small Horns</label>
+        <description>Carriers of this gene grow two small horns protruding from the forehead. with a slight glint of orange on the tip</description>
+        <iconPath>UI/Genes/SmallHornsGeneIcon</iconPath>
+        <graphicData>
+            <graphicPath>Things/Pawns/Humanlike/HeadAttachments/SmallHorn/SmallHorns</graphicPath>
+            <color>(255, 255, 255)</color>
+            <layer>PostHeadgear</layer>
+        </graphicData>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>horn</symbol></li>
+                <li><symbol>knob</symbol></li>
+                <li><symbol>spike</symbol></li>
+                <li><symbol>devil</symbol></li>
+                <li><symbol>demon</symbol></li>
+                <li><symbol>luci</symbol></li>
+                <li><symbol>beelze</symbol></li>
+                <li><symbol>hell</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>horn</symbol></li>
+                <li><symbol>spike</symbol></li>
+                <li><symbol>vil</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+    
+    <!-- Medium Horn -->
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>Headbone_Medium_NS</defName>
+        <displayCategory>Zearot_Category</displayCategory>
+        <label>Medium Horns</label>
+        <description>Carriers of this gene grow two Medium horns protruding from the forehead. with a slight glint of orange on the tip</description>
+        <iconPath>UI/Genes/MediumHornsGeneIcon</iconPath>
+        <graphicData>
+            <graphicPath>Things/Pawns/Humanlike/HeadAttachments/MediumHorns/MediumHorns</graphicPath>
+            <color>(255, 255, 255)</color>
+            <layer>PostHeadgear</layer>
+        </graphicData>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>horn</symbol></li>
+                <li><symbol>knob</symbol></li>
+                <li><symbol>spike</symbol></li>
+                <li><symbol>devil</symbol></li>
+                <li><symbol>demon</symbol></li>
+                <li><symbol>luci</symbol></li>
+                <li><symbol>beelze</symbol></li>
+                <li><symbol>hell</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>horn</symbol></li>
+                <li><symbol>spike</symbol></li>
+                <li><symbol>vil</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+    
+</Defs>
