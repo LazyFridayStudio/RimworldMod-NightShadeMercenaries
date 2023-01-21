@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="BenchBase">
-        <defName>PlasmaForge</defName>
+        <defName>Building_PlasmaForge</defName>
         <label>fabrication bench</label>
         <description>A workbench equipped with advanced tools for producing technological marvels from simpler materials.</description>
         <thingClass>Building_WorkTable</thingClass>
@@ -37,10 +37,6 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
         </comps>
-        <recipes>
-            <li>Make_ComponentIndustrial</li>
-            <li>Make_ComponentSpacer</li>
-        </recipes>
         <graphicData>
             <texPath>Things/Building/Production/PlasmaForge/PlasmaForge</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
