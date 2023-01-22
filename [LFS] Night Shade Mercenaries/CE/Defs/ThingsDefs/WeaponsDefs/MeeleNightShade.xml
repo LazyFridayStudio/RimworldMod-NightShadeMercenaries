@@ -80,7 +80,7 @@
                 <Crafting>5</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>FabricationBench</li>
+                <li>Building_PlasmaForge</li>
             </recipeUsers>
         </recipeMaker>
     </ThingDef>
@@ -165,7 +165,7 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>FabricationBench</li>
+                <li>Building_PlasmaForge</li>
             </recipeUsers>
         </recipeMaker>
     </ThingDef>
@@ -240,7 +240,7 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
-                <li>FabricationBench</li>
+                <li>Building_PlasmaForge</li>
             </recipeUsers>
         </recipeMaker>
     </ThingDef>
