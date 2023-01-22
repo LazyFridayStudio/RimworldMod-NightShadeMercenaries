@@ -88,6 +88,9 @@
         <description>Craft 200 12Gauge Charged shells.</description>
         <jobString>Making 12Gauge Charged shells.</jobString>
         <researchPrerequisite Inherit="False">PlasmaInfusions</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Building_PlasmaForge</li>
+        </recipeUsers>
         <ingredients>
             <li>
                 <filter>

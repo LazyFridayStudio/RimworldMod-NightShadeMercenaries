@@ -79,6 +79,9 @@
         <description>Craft 100 8x120 Plasma Charge Cartridges.</description>
         <jobString>Making 8x120 Plasma Charge Cartridges.</jobString>
         <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Building_PlasmaForge</li>
+        </recipeUsers>
         <ingredients>
             <li>
                 <filter>

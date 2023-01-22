@@ -97,6 +97,19 @@
                         </li>
                     </value>
                 </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_PlasmaTurret"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(3,3)</drawSize>
+                            <offsets>
+                                <li>(0.55,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
             </operations>
         </match>
         <nomatch Class="PatchOperationSequence">
@@ -185,6 +198,19 @@
                         <li Class="MuzzleFlash.MuzzleFlashProps">
                             <def>MF_StandardMuzzleFalsh</def>
                             <drawSize>(1.5,1.5)</drawSize>
+                            <offsets>
+                                <li>(0.55,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Gun_PlasmaAutoTurret"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(3,3)</drawSize>
                             <offsets>
                                 <li>(0.55,0.01)</li>
                             </offsets>

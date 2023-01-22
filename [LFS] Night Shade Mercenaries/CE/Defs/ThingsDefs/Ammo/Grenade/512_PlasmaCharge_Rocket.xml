@@ -88,10 +88,11 @@
         <label>Make 512 Plasma Charge x10</label>
         <description>Craft 10 512 Plasma Charge Rockets.</description>
         <jobString>Making 512 Plasma Charge Rockets.</jobString>
-
         <workAmount>9000</workAmount>
-
         <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+        <recipeUsers Inherit="False">
+            <li>Building_PlasmaForge</li>
+        </recipeUsers>
         <ingredients>
             <li>
                 <filter>
