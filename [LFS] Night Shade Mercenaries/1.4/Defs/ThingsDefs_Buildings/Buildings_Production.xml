@@ -36,6 +36,10 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>8</glowRadius>
+                <glowColor>(255,190,36,0)</glowColor>
+            </li>
         </comps>
         <graphicData>
             <texPath>Things/Building/Production/PlasmaForge/PlasmaForge</texPath>
