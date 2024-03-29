@@ -39,9 +39,11 @@ This simple faction mod adds 10 weapons, 1 armour set, an extra helmet, 1 Factio
 ![Mod Preview](https://i.imgur.com/AOncUDk.png)
 
 ![Mod Preview](https://i.imgur.com/16DBOPd.png)
-[![Steam Workshop](https://i.imgur.com/R0GDtYA.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044)
 [![Steam Workshop](https://i.imgur.com/H74d5Rr.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2917732219)
 [![Steam Workshop](https://i.imgur.com/rkbK7OG.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013)
+
+Only 1.4
+[![Steam Workshop](https://i.imgur.com/R0GDtYA.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044)
 
 ![Mod Preview](https://i.imgur.com/j2Qa3am.png)
 [![Steam Workshop](https://i.imgur.com/7UVyj7k.png)](https://steamcommunity.com/sharedfiles/filedetails/?id=2912569371)
