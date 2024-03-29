@@ -2,16 +2,17 @@
 <ModMetaData>
     <name>[LFS] Night Shade Mercenaries</name>
     <author>Lazy Friday Studio</author>
-    <description>Version: 1.4\n\n Adds Night Shade Xeno, Faction and weapon gear sets.</description>
+    <description>Adds Night Shade Xeno, Faction and weapon gear sets.</description>
     <supportedVersions>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
     <packageId>LazyFridayStudio.NightShadeMercenarys</packageId>
     <modDependencies>
-    <li>
-        <packageId>Ludeon.RimWorld</packageId>
-        <displayName>Core</displayName>
-    </li>
+        <li>
+            <packageId>Ludeon.RimWorld</packageId>
+            <displayName>Core</displayName>
+        </li>
     </modDependencies>
     <loadAfter>
         <li>Ludeon.RimWorld</li>

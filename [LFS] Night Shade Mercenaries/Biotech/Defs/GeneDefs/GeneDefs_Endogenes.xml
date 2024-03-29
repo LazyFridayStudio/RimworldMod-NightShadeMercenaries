@@ -5,94 +5,206 @@
         <defName>Headbone_SmallHorns_NS</defName>
         <displayCategory>Zearot_Category</displayCategory>
         <label>Small Horns</label>
-        <description>Carriers of this gene grow two small horns protruding from the forehead. with a slight glint of orange on the tip</description>
+        <description>Carriers of this gene grow two small horns protruding from the forehead. with a
+            slight glint of orange on the tip</description>
         <iconPath>UI/Genes/SmallHornsGeneIcon</iconPath>
-        <graphicData>
-            <graphicPath>Things/Pawns/Humanlike/HeadAttachments/SmallHorn/SmallHorns</graphicPath>
-            <color>(255, 255, 255)</color>
-            <layer>PostHeadgear</layer>
-        </graphicData>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                    <li>Things/Pawns/Humanlike/HeadAttachments/SmallHorn/SmallHorns</li>
+                </texPaths>
+                <color>(255, 255, 255)</color>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
         <symbolPack>
             <prefixSymbols>
-                <li><symbol>horn</symbol></li>
-                <li><symbol>knob</symbol></li>
-                <li><symbol>spike</symbol></li>
-                <li><symbol>devil</symbol></li>
-                <li><symbol>demon</symbol></li>
-                <li><symbol>luci</symbol></li>
-                <li><symbol>beelze</symbol></li>
-                <li><symbol>hell</symbol></li>
+                <li>
+                    <symbol>horn</symbol>
+                </li>
+                <li>
+                    <symbol>knob</symbol>
+                </li>
+                <li>
+                    <symbol>spike</symbol>
+                </li>
+                <li>
+                    <symbol>devil</symbol>
+                </li>
+                <li>
+                    <symbol>demon</symbol>
+                </li>
+                <li>
+                    <symbol>luci</symbol>
+                </li>
+                <li>
+                    <symbol>beelze</symbol>
+                </li>
+                <li>
+                    <symbol>hell</symbol>
+                </li>
             </prefixSymbols>
             <suffixSymbols>
-                <li><symbol>horn</symbol></li>
-                <li><symbol>spike</symbol></li>
-                <li><symbol>vil</symbol></li>
+                <li>
+                    <symbol>horn</symbol>
+                </li>
+                <li>
+                    <symbol>spike</symbol>
+                </li>
+                <li>
+                    <symbol>vil</symbol>
+                </li>
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
-    
+
     <!-- Medium Horn -->
     <GeneDef ParentName="GeneHeadboneBase">
         <defName>Headbone_Medium_NS</defName>
         <displayCategory>Zearot_Category</displayCategory>
         <label>Medium Horns</label>
-        <description>Carriers of this gene grow two Medium horns protruding from the forehead. with a slight glint of orange on the tip</description>
+        <description>Carriers of this gene grow two Medium horns protruding from the forehead. with
+            a slight glint of orange on the tip</description>
         <iconPath>UI/Genes/MediumHornsGeneIcon</iconPath>
-        <graphicData>
-            <graphicPath>Things/Pawns/Humanlike/HeadAttachments/MediumHorns/MediumHorns</graphicPath>
-            <color>(255, 255, 255)</color>
-            <layer>PostHeadgear</layer>
-        </graphicData>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                    <li>Things/Pawns/Humanlike/HeadAttachments/MediumHorns/MediumHorns</li>
+                </texPaths>
+                <color>(255, 255, 255)</color>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
         <symbolPack>
             <prefixSymbols>
-                <li><symbol>horn</symbol></li>
-                <li><symbol>knob</symbol></li>
-                <li><symbol>spike</symbol></li>
-                <li><symbol>devil</symbol></li>
-                <li><symbol>demon</symbol></li>
-                <li><symbol>luci</symbol></li>
-                <li><symbol>beelze</symbol></li>
-                <li><symbol>hell</symbol></li>
+                <li>
+                    <symbol>horn</symbol>
+                </li>
+                <li>
+                    <symbol>knob</symbol>
+                </li>
+                <li>
+                    <symbol>spike</symbol>
+                </li>
+                <li>
+                    <symbol>devil</symbol>
+                </li>
+                <li>
+                    <symbol>demon</symbol>
+                </li>
+                <li>
+                    <symbol>luci</symbol>
+                </li>
+                <li>
+                    <symbol>beelze</symbol>
+                </li>
+                <li>
+                    <symbol>hell</symbol>
+                </li>
             </prefixSymbols>
             <suffixSymbols>
-                <li><symbol>horn</symbol></li>
-                <li><symbol>spike</symbol></li>
-                <li><symbol>vil</symbol></li>
+                <li>
+                    <symbol>horn</symbol>
+                </li>
+                <li>
+                    <symbol>spike</symbol>
+                </li>
+                <li>
+                    <symbol>vil</symbol>
+                </li>
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
 
     <!-- Large Horn -->
+
     <GeneDef ParentName="GeneHeadboneBase">
         <defName>Headbone_Large_NS</defName>
         <displayCategory>Zearot_Category</displayCategory>
         <label>Large Horns</label>
-        <description>Carriers of this gene grow two Large horns protruding from the forehead. with a slight glint of orange on the tip</description>
+        <description>Carriers of this gene grow two Large horns protruding from the forehead. with a
+            slight glint of orange on the tip</description>
         <iconPath>UI/Genes/LargeHornsGeneIcon</iconPath>
-        <graphicData>
-            <graphicPath>Things/Pawns/Humanlike/HeadAttachments/LargeHorns/LargeHorns</graphicPath>
-            <color>(255, 255, 255)</color>
-            <layer>PostHeadgear</layer>
-        </graphicData>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                    <li>Things/Pawns/Humanlike/HeadAttachments/LargeHorns/LargeHorns</li>
+                </texPaths>
+                <color>(255, 255, 255)</color>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>true</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>70</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
         <symbolPack>
             <prefixSymbols>
-                <li><symbol>horn</symbol></li>
-                <li><symbol>knob</symbol></li>
-                <li><symbol>spike</symbol></li>
-                <li><symbol>devil</symbol></li>
-                <li><symbol>demon</symbol></li>
-                <li><symbol>luci</symbol></li>
-                <li><symbol>beelze</symbol></li>
-                <li><symbol>hell</symbol></li>
+                <li>
+                    <symbol>horn</symbol>
+                </li>
+                <li>
+                    <symbol>knob</symbol>
+                </li>
+                <li>
+                    <symbol>spike</symbol>
+                </li>
+                <li>
+                    <symbol>devil</symbol>
+                </li>
+                <li>
+                    <symbol>demon</symbol>
+                </li>
+                <li>
+                    <symbol>luci</symbol>
+                </li>
+                <li>
+                    <symbol>beelze</symbol>
+                </li>
+                <li>
+                    <symbol>hell</symbol>
+                </li>
             </prefixSymbols>
             <suffixSymbols>
-                <li><symbol>horn</symbol></li>
-                <li><symbol>spike</symbol></li>
-                <li><symbol>vil</symbol></li>
+                <li>
+                    <symbol>horn</symbol>
+                </li>
+                <li>
+                    <symbol>spike</symbol>
+                </li>
+                <li>
+                    <symbol>vil</symbol>
+                </li>
             </suffixSymbols>
         </symbolPack>
     </GeneDef>
-    
+
     <!-- Hair -->
     <GeneDef ParentName="GeneHairColorBase">
         <defName>Hair_Zearot</defName>
@@ -110,17 +222,33 @@
         <displayCategory>Zearot_Category</displayCategory>
         <label>Zearot Skin Color</label>
         <labelShortAdj>Black</labelShortAdj>
-        <description>Carriers of this gene produce a pigment that gives their skin a dark grey color.</description>
+        <description>Carriers of this gene produce a pigment that gives their skin a dark grey
+            color.</description>
+        <randomBrightnessFactor>0.2</randomBrightnessFactor>
         <skinColorOverride>(33, 33, 33)</skinColorOverride>
         <displayOrderInCategory>65</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li>
+                    <symbol>dark</symbol>
+                </li>
+                <li>
+                    <symbol>red</symbol>
+                </li>
+                <li>
+                    <symbol>dusty</symbol>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
     </GeneDef>
-    
+
     <!-- Body -->
     <GeneDef>
         <defName>Body_Zearot</defName>
         <label>Zearot Skin</label>
         <labelShortAdj>skin</labelShortAdj>
-        <description>A dark and almost lightless body, with large circles of lighter pigmentation on their shoulders.</description>
+        <description>A dark and almost lightless body, with large circles of lighter pigmentation on
+            their shoulders.</description>
         <biostatCpx>1</biostatCpx>
         <biostatMet>-1</biostatMet>
         <displayCategory>Zearot_Category</displayCategory>
@@ -131,12 +259,22 @@
             <ComfyTemperatureMax>10</ComfyTemperatureMax>
         </statOffsets>
         <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
-        <graphicData>
-            <fur>ZearotSkin</fur>
-            <tattoosVisible>true</tattoosVisible>
-        </graphicData>
+        <fur>ZearotSkin</fur>
+        <tattoosVisible>true</tattoosVisible>
+        <skinIsHairColor>false</skinIsHairColor>
+        <renderNodeProperties>
+            <li>
+                <debugLabel>Fur</debugLabel>
+                <nodeClass>PawnRenderNode_Fur</nodeClass>
+                <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+                <baseLayer>5</baseLayer>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <colorType>Hair</colorType>
+                <parentTagDef>Body</parentTagDef>
+            </li>
+        </renderNodeProperties>
     </GeneDef>
-    
+
     <FurDef>
         <defName>ZearotSkin</defName>
         <noGraphic>true</noGraphic>
@@ -147,7 +285,8 @@
             <Fat>Things/Pawns/Humanlike/Bodies/Zearot/Zearot_Fat</Fat>
             <Thin>Things/Pawns/Humanlike/Bodies/Zearot/Zearot_Thin</Thin>
             <Child>Things/Pawns/Humanlike/Bodies/Zearot/Zearot_Child</Child>
-            <Baby>Things/Pawns/Humanlike/Bodies/Zearot/Zearot_Child</Baby><!-- Always covered by swaddled graphic -->
+            <Baby>Things/Pawns/Humanlike/Bodies/Zearot/Zearot_Child</Baby><!-- Always covered by
+            swaddled graphic -->
         </bodyTypeGraphicPaths>
     </FurDef>
 </Defs>

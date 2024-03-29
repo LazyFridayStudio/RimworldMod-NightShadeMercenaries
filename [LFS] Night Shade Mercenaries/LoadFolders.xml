@@ -7,4 +7,12 @@
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
         <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
     </v1.4>
+    <v1.5>
+        <li>/</li>
+        <li>1.5</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE</li>
+        <li IfModActive="CETeam.CombatExtended">CE</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+        <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
+    </v1.5>
 </loadFolders>
